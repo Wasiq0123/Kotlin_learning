@@ -1,4 +1,4 @@
-package com.example.kotin_practice.ui.theme.lazyrowandcolumn
+package com.example.kotin_practice.lazyrowandcolumn
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
