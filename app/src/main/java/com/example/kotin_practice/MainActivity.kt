@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.kotin_practice.counter_app.CounterScreenExample
 import com.example.kotin_practice.counter_app.CounterViewModel
 import com.example.kotin_practice.intent_and_filters.SecondActivity
@@ -27,8 +28,11 @@ import com.example.kotin_practice.snackbar_toast.ShowToasExample
 class MainActivity : ComponentActivity() {
     private  val viewModel: CounterViewModel by  viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
+
         enableEdgeToEdge()
+        installSplashScreen()
         setContent {
             Column(
                 modifier = Modifier.fillMaxSize(),

@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
 
-    <style name="Theme.Kotin_practice" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Normal application theme -->
+    <style
+        name="Theme.Kotin_practice"
+        parent="android:Theme.Material.Light.NoActionBar">
+
+    </style>
+
+
+    <!-- AndroidX Splash Screen theme -->
+    <style
+        name="Theme.SplashScreen."
+        parent="Theme.SplashScreen">
+
+        <!-- Splash background -->
+        <item name="windowSplashScreenBackground">
+            @android:color/white
+        </item>
+
+        <!-- Theme used after splash disappears -->
+        <item name="postSplashScreenTheme">
+            @style/Theme.Kotin_practice
+        </item>
+
+    </style>
+
 </resources>
